@@ -29,22 +29,49 @@ class TicTacToe {
     }
 
     private(set) var state: State = .play
+    private let board = Board()
     private let players: [Player]
     private var currentPlayerIndex = 0
+    private var currentMark = Mark.x
 
     var currentPlayer: Player {
         return self.players[self.currentPlayerIndex]
     }
 
     init(player1: String, player2: String) {
-        self.players = [Player(name: player1)]
+        self.players = [Player(name: player1), Player(name: player2)]
     }
 
     func updateMark(at index: Int) throws {
-        throw TicTacToe.Error.alreadyPlayed
+        do {
+            let boardState = try self.board.updateMark(at: index, with: self.currentMark)
+            switch boardState {
+            case .play:
+                self.state = .play
+            case .full:
+                self.state = .draw
+            case .threeInARow:
+                self.state = .win(self.currentPlayer)
+            }
+            self.nextPlayer()
+        } catch Board.BoardError.boardIsFull {
+            throw Error.gameEnded
+        } catch Board.BoardError.alreadyPlayed {
+            throw Error.alreadyPlayed
+        } catch {
+            print("Unexpected error: \(error).")
+        }
     }
 
     func allMarks() -> [Mark] {
-        return [Mark]()
+        return self.board.allMarks
+    }
+
+    private func nextPlayer() {
+        self.currentPlayerIndex += 1
+        self.currentMark = self.currentMark == .x ? .o : .x
+        if self.currentPlayerIndex >= self.players.count {
+            self.currentPlayerIndex = 0
+        }
     }
 }

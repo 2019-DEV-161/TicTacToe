@@ -12,6 +12,13 @@ enum Mark: Equatable {
     case x, o, empty
 
     var image: UIImage? {
-        return nil
+        switch self {
+        case .x:
+            return UIImage(named: "x_icon")
+        case .o:
+            return UIImage(named: "o_icon")
+        case .empty:
+            return nil
+        }
     }
 }

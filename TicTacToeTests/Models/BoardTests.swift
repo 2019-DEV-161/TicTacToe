@@ -163,7 +163,7 @@ class BoardTests: XCTestCase {
         }
     }
 
-    func testHasWinnerTransversal2() {
+    func testHasWinnerTransversalReverse() {
         let board = Board()
         do {
             var state: Board.State = .play
