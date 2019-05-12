@@ -97,6 +97,7 @@
 				334C3A9D22888395008E31FD /* Sources */,
 				334C3A9E22888395008E31FD /* Frameworks */,
 				334C3A9F22888395008E31FD /* Resources */,
+				334C3AC42288841D008E31FD /* swiftlint */,
 			);
 			buildRules = (
 			);
@@ -181,6 +182,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		334C3AC42288841D008E31FD /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nswiftlint lint --path TicTacToe --config ../swiftlint.yml\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		334C3A9D22888395008E31FD /* Sources */ = {
