@@ -10,6 +10,19 @@
 		334C3AA522888395008E31FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AA422888395008E31FD /* AppDelegate.swift */; };
 		334C3AAC22888396008E31FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334C3AAB22888396008E31FD /* Assets.xcassets */; };
 		334C3AAF22888396008E31FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334C3AAD22888396008E31FD /* LaunchScreen.storyboard */; };
+		334C3AC9228884BD008E31FD /* AssertionsAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AC8228884BD008E31FD /* AssertionsAdditions.swift */; };
+		334C3ACF228884C5008E31FD /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3ACB228884C5008E31FD /* BoardTests.swift */; };
+		334C3AD0228884C5008E31FD /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3ACC228884C5008E31FD /* PlayerTests.swift */; };
+		334C3AD2228884C5008E31FD /* PlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3ACE228884C5008E31FD /* PlayTests.swift */; };
+		334C3AD9228884CD008E31FD /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AD5228884CC008E31FD /* Mark.swift */; };
+		334C3ADA228884CD008E31FD /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AD6228884CC008E31FD /* Board.swift */; };
+		334C3ADB228884CD008E31FD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AD7228884CC008E31FD /* Player.swift */; };
+		334C3ADD228884D0008E31FD /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AD5228884CC008E31FD /* Mark.swift */; };
+		334C3ADE228884D0008E31FD /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AD6228884CC008E31FD /* Board.swift */; };
+		334C3ADF228884D0008E31FD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AD7228884CC008E31FD /* Player.swift */; };
+		334C3AE122888ACF008E31FD /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AD4228884CC008E31FD /* TicTacToe.swift */; };
+		334C3AE222888ACF008E31FD /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3AD4228884CC008E31FD /* TicTacToe.swift */; };
+		334C3AE322888AD2008E31FD /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3ACD228884C5008E31FD /* TicTacToeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +43,15 @@
 		334C3AB022888396008E31FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334C3AB522888396008E31FD /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		334C3ABB22888396008E31FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		334C3AC8228884BD008E31FD /* AssertionsAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertionsAdditions.swift; sourceTree = "<group>"; };
+		334C3ACB228884C5008E31FD /* BoardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardTests.swift; sourceTree = "<group>"; };
+		334C3ACC228884C5008E31FD /* PlayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
+		334C3ACD228884C5008E31FD /* TicTacToeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
+		334C3ACE228884C5008E31FD /* PlayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayTests.swift; sourceTree = "<group>"; };
+		334C3AD4228884CC008E31FD /* TicTacToe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
+		334C3AD5228884CC008E31FD /* Mark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		334C3AD6228884CC008E31FD /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		334C3AD7228884CC008E31FD /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +93,7 @@
 		334C3AA322888395008E31FD /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				334C3AD3228884CC008E31FD /* Models */,
 				334C3AA422888395008E31FD /* AppDelegate.swift */,
 				334C3AAB22888396008E31FD /* Assets.xcassets */,
 				334C3AAD22888396008E31FD /* LaunchScreen.storyboard */,
@@ -82,9 +105,41 @@
 		334C3AB822888396008E31FD /* TicTacToeTests */ = {
 			isa = PBXGroup;
 			children = (
+				334C3ACA228884C5008E31FD /* Models */,
+				334C3AC7228884BD008E31FD /* Utils */,
 				334C3ABB22888396008E31FD /* Info.plist */,
 			);
 			path = TicTacToeTests;
+			sourceTree = "<group>";
+		};
+		334C3AC7228884BD008E31FD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				334C3AC8228884BD008E31FD /* AssertionsAdditions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		334C3ACA228884C5008E31FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				334C3ACB228884C5008E31FD /* BoardTests.swift */,
+				334C3ACC228884C5008E31FD /* PlayerTests.swift */,
+				334C3ACD228884C5008E31FD /* TicTacToeTests.swift */,
+				334C3ACE228884C5008E31FD /* PlayTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		334C3AD3228884CC008E31FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				334C3AD4228884CC008E31FD /* TicTacToe.swift */,
+				334C3AD5228884CC008E31FD /* Mark.swift */,
+				334C3AD6228884CC008E31FD /* Board.swift */,
+				334C3AD7228884CC008E31FD /* Player.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +196,7 @@
 					};
 					334C3AB422888396008E31FD = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 334C3AA022888395008E31FD;
 					};
 				};
@@ -210,6 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				334C3AA522888395008E31FD /* AppDelegate.swift in Sources */,
+				334C3ADA228884CD008E31FD /* Board.swift in Sources */,
+				334C3ADB228884CD008E31FD /* Player.swift in Sources */,
+				334C3AD9228884CD008E31FD /* Mark.swift in Sources */,
+				334C3AE122888ACF008E31FD /* TicTacToe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334C3AD2228884C5008E31FD /* PlayTests.swift in Sources */,
+				334C3ACF228884C5008E31FD /* BoardTests.swift in Sources */,
+				334C3AE222888ACF008E31FD /* TicTacToe.swift in Sources */,
+				334C3AD0228884C5008E31FD /* PlayerTests.swift in Sources */,
+				334C3AE322888AD2008E31FD /* TicTacToeTests.swift in Sources */,
+				334C3ADD228884D0008E31FD /* Mark.swift in Sources */,
+				334C3ADE228884D0008E31FD /* Board.swift in Sources */,
+				334C3ADF228884D0008E31FD /* Player.swift in Sources */,
+				334C3AC9228884BD008E31FD /* AssertionsAdditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +466,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TicTacToeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.dev.fortis.TicTacToeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
@@ -417,6 +488,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TicTacToeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
