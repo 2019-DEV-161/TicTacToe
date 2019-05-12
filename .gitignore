@@ -1,0 +1,16 @@
+# Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+!default.perspectivev3
+!default.xcworkspace
+xcuserdata
+profile
+DerivedData/*
+
+.DS_Store
+.gitattributes
+
+\.idea/
+.vscode/
+IDEWorkspaceChecks.plist
