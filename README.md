@@ -18,8 +18,6 @@ The rules are described below :
 
 ## How to run the tests
 
-### With Xcode
-
 Open the project in Xcode 10.2, select Test in the Product menu or use shortcut ⌘U
 
 ## How to run the program
