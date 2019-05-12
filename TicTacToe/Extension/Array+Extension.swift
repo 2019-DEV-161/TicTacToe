@@ -19,6 +19,7 @@ extension Array where Element: Equatable {
 
 extension Array {
 
+    
     @discardableResult mutating func removeObject<U: Equatable>(_ object: U) -> Bool {
         for (idx, objectToCompare) in self.enumerated() {
             guard let to = objectToCompare as? U,

@@ -20,10 +20,6 @@ class Coordinator: NSObject {
         super.init()
     }
 
-    func reset() {
-        //To override
-    }
-
     func removeCoordinator(coordinator: Coordinator?) {
         if let coordinator = coordinator {
             if self.childCoordinators.removeObject(coordinator) {

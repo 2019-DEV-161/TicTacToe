@@ -22,7 +22,11 @@ class AppCoordinator: Coordinator {
 
     private func launchTicTacToe() {
         self.lastViewController = self.navigationController.topViewController
-        //TODO: Launch TicTacToe
+
+        let coordinator = TicTacToeCoordinator(navigationController: self.navigationController)
+        coordinator.completionDelegate = self
+        coordinator.start()
+        self.addChild(coordinator: coordinator)
     }
 
     private func popToLastViewController() {
@@ -44,4 +48,12 @@ extension AppCoordinator: GameListViewControllerDelegate {
     }
 
     func didTapBack(on gameListViewController: GameListViewController) { }
+}
+
+extension AppCoordinator: TicTacToeCoordinatorCompletionDelegate {
+
+    func didEnd(coordinator: TicTacToeCoordinator) {
+        self.removeChild(coordinator: coordinator)
+        self.popToLastViewController()
+    }
 }

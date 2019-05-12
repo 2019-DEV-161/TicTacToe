@@ -8,6 +8,11 @@
 
 import UIKit
 
+/// Base UIViewController class for all UIViewController subclasses. This controller adds an easy mechanism to add constraints in code.
+/// To do so:
+/// - override `setupLoadView` to setup all the subviews
+/// - override `setupConstraints` to add all the constraints
+/// - override `setupTitle` to configure title for the controller
 class BaseViewController: UIViewController {
 
     private(set) var didSetupConstraints: Bool = false
